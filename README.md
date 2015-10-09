@@ -1,2 +1,2 @@
 # camel-rest
-Implement REST services with Camel
+Reference application implementing Camel REST services
