@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   
   <properties>
-  	<camel.version>2.15.4-SNAPSHOT</camel.version>
+  	<camel.version>2.16.0</camel.version>
   	<spring.version>4.1.6.RELEASE</spring.version>
   	<maven.war.plugin.version>2.6</maven.war.plugin.version>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,8 +16,8 @@
   <repositories>
   	<repository>
     	<id>apache.snapshots</id>
-    	<name>Apache Development Snapshot Repository</name>
-    	<url>https://repository.apache.org/content/repositories/snapshots/</url>
+    	<name>Apache Releases Repository</name>
+    	<url>https://repository.apache.org/content/repositories/releases/</url>
     	<releases>
         	<enabled>false</enabled>
     	</releases>
@@ -87,6 +87,16 @@
 		<groupId>org.apache.camel</groupId>
 		<artifactId>camel-spring-boot</artifactId>
 		<version>${camel.version}</version>
+	</dependency>
+	<dependency>
+   		<groupId>org.apache.camel</groupId>
+   		<artifactId>camel-cxf</artifactId>
+   		<version>${camel.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.camel</groupId>
+   		<artifactId>camel-servlet</artifactId>
+   		<version>${camel.version}</version>
 	</dependency>
 	<dependency>
 		<groupId>com.fasterxml.jackson.core</groupId>
