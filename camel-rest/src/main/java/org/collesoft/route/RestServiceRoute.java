@@ -10,7 +10,7 @@ public class RestServiceRoute extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		
-		restConfiguration().component("restlet").host("localhost").bindingMode(RestBindingMode.auto);
+		restConfiguration().component("servlet").apiContextPath("/camel-rest").host("localhost").bindingMode(RestBindingMode.auto);
 		
 		rest("/api").get("/start").to("direct:startProcess").get("/stop").to("direct:stopProcess");
 
